@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "money-format@github:money-format/money-format",
+        "scope": null,
+        "escapedName": "money-format",
+        "name": "money-format",
+        "rawSpec": "github:money-format/money-format",
+        "spec": "github:money-format/money-format",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:money-format/money-format.git",
+          "sshUrl": "git+ssh://git@github.com/money-format/money-format.git",
+          "httpsUrl": "git+https://github.com/money-format/money-format.git",
+          "gitUrl": "git://github.com/money-format/money-format.git",
+          "shortcut": "github:money-format/money-format",
+          "directUrl": "https://raw.githubusercontent.com/money-format/money-format/master/package.json"
+        }
+      },
+      "C:\\Users\\jonathan\\AppData\\Roaming\\npm\\node_modules\\generator-money-format"
+    ]
+  ],
+  "_from": "money-format/money-format",
+  "_id": "money-format@4.1.0",
+  "_inCache": true,
+  "_location": "/generator-money-format/money-format",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "money-format@github:money-format/money-format",
+    "scope": null,
+    "escapedName": "money-format",
+    "name": "money-format",
+    "rawSpec": "github:money-format/money-format",
+    "spec": "github:money-format/money-format",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:money-format/money-format.git",
+      "sshUrl": "git+ssh://git@github.com/money-format/money-format.git",
+      "httpsUrl": "git+https://github.com/money-format/money-format.git",
+      "gitUrl": "git://github.com/money-format/money-format.git",
+      "shortcut": "github:money-format/money-format",
+      "directUrl": "https://raw.githubusercontent.com/money-format/money-format/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/generator-money-format"
+  ],
+  "_resolved": "git://github.com/money-format/money-format.git#a270f97ba531ecf52de280bdb3ea56d3c8c0122b",
+  "_shasum": "f086e175f2ba8b565c10e74d47f83a1a55b45732",
+  "_shrinkwrap": null,
+  "_spec": "money-format@github:money-format/money-format",
+  "_where": "C:\\Users\\jonathan\\AppData\\Roaming\\npm\\node_modules\\generator-money-format",
+  "author": {
+    "name": "Zeno Rocha",
+    "email": "zno.rocha@gmail.com",
+    "url": "https://github.com/zenorocha"
+  },
+  "bugs": {
+    "url": "https://github.com/money-format/money-format/issues"
+  },
+  "contributors": [
+    {
+      "name": "Zeno Rocha",
+      "email": "zno.rocha@gmail.com",
+      "url": "https://github.com/zenorocha"
+    },
+    {
+      "name": "Addy Osmani",
+      "email": "addyosmani@gmail.com",
+      "url": "https://github.com/addyosmani"
+    },
+    {
+      "name": "Helder Santana",
+      "email": "heldr@me.com",
+      "url": "https://github.com/heldr"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.5.1"
+  },
+  "description": "A jump-start for jQuery plugins development.",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jscs": "^2.7.0",
+    "grunt-karma": "^0.12.0",
+    "jscs": "^2.10.1",
+    "karma": "^0.13.21",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-qunit": "^0.1.5",
+    "phantomjs": "^1.9.18",
+    "qunitjs": "^1.19.0"
+  },
+  "gitHead": "a270f97ba531ecf52de280bdb3ea56d3c8c0122b",
+  "homepage": "http://jqueryboilerplate.com",
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "boilerplate",
+    "plugins"
+  ],
+  "license": "MIT",
+  "name": "money-format",
+  "optionalDependencies": {},
+  "readme": "# money.format [![Build Status](https://secure.travis-ci.org/money-format/money-format.svg?branch=master)](https://travis-ci.org/money-format/money-format) ![Bower Version](https://badge.fury.io/bo/money-format.svg)\r\n\r\n### A jump-start for jQuery plugins development\r\n\r\nSo, you've tried your hand at writing jQuery plugins and you're comfortable putting together something that probably works. Awesome! Thing is, you think there might be better ways you could be writing them - you've seen them done a number of different ways in the wild, but aren't really sure what the differences between these patterns are or how to get started with them.\r\n\r\nThis project won't seek to provide a perfect solution to every possible pattern, but will attempt to cover a simple template for beginners and above. By using a basic defaults object, simple constructor for assigning the element to work with and extending options with defaults and a lightweight wrapper around the constructor to avoid issues with multiple instantiations.\r\n\r\n## Usage\r\n\r\n1. Include jQuery:\r\n\r\n\t```html\r\n\t<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js\"></script>\r\n\t```\r\n\r\n2. Include plugin's code:\r\n\r\n\t```html\r\n\t<script src=\"dist/money.format.min.js\"></script>\r\n\t```\r\n\r\n3. Call the plugin:\r\n\r\n\t```javascript\r\n\t$(\"#element\").defaultPluginName({\r\n\t\tpropertyName: \"a custom value\"\r\n\t});\r\n\t```\r\n\r\n## Structure\r\n\r\nThe basic structure of the project is given in the following way:\r\n\r\n```\r\n├── demo/\r\n│   └── index.html\r\n├── dist/\r\n│   ├── money.format.js\r\n│   └── money.format.min.js\r\n├── src/\r\n│   ├── money.format.coffee\r\n│   └── money.format.js\r\n├── .editorconfig\r\n├── .gitignore\r\n├── .jshintrc\r\n├── .travis.yml\r\n├── Gruntfile.js\r\n└── package.json\r\n```\r\n\r\n#### [demo/](https://github.com/money-format/boilerplate/tree/master/demo)\r\n\r\nContains a simple HTML file to demonstrate your plugin.\r\n\r\n#### [dist/](https://github.com/money-format/boilerplate/tree/master/dist)\r\n\r\nThis is where the generated files are stored once Grunt runs.\r\n\r\n#### [src/](https://github.com/money-format/boilerplate/tree/master/src)\r\n\r\nContains the files responsible for your plugin, you can choose between JavaScript or CoffeeScript.\r\n\r\n#### [.editorconfig](https://github.com/money-format/boilerplate/tree/master/.editorconfig)\r\n\r\nThis file is for unifying the coding style for different editors and IDEs.\r\n\r\n> Check [editorconfig.org](http://editorconfig.org) if you haven't heard about this project yet.\r\n\r\n#### [.gitignore](https://github.com/money-format/boilerplate/tree/master/.gitignore)\r\n\r\nList of files that we don't want Git to track.\r\n\r\n> Check this [Git Ignoring Files Guide](https://help.github.com/articles/ignoring-files) for more details.\r\n\r\n#### [.jshintrc](https://github.com/money-format/boilerplate/tree/master/.jshintrc)\r\n\r\nList of rules used by JSHint to detect errors and potential problems in JavaScript.\r\n\r\n> Check [jshint.com](http://jshint.com/about/) if you haven't heard about this project yet.\r\n\r\n#### [.travis.yml](https://github.com/money-format/boilerplate/tree/master/.travis.yml)\r\n\r\nDefinitions for continous integration using Travis.\r\n\r\n> Check [travis-ci.org](http://about.travis-ci.org/) if you haven't heard about this project yet.\r\n\r\n#### [Gruntfile.js](https://github.com/money-format/boilerplate/tree/master/Gruntfile.js)\r\n\r\nContains all automated tasks using Grunt.\r\n\r\n> Check [gruntjs.com](http://gruntjs.com) if you haven't heard about this project yet.\r\n\r\n#### [package.json](https://github.com/money-format/boilerplate/tree/master/package.json)\r\n\r\nSpecify all dependencies loaded via Node.JS.\r\n\r\n> Check [NPM](https://npmjs.org/doc/json.html) for more details.\r\n\r\n## Guides\r\n\r\n#### How did we get here?\r\n\r\nHave you got in this repo and still not sure about using this boilerplate?\r\n\r\nWell, extending jQuery with plugins and methods is very powerful and can save you and your peers a lot of development time by abstracting your most clever functions into plugins.\r\n\r\n[This awesome guide](https://github.com/money-format/boilerplate/wiki/How-did-we-get-here%3F), adapted from [jQuery Plugins/Authoring](http://docs.jquery.com/Plugins/Authoring), will outline the basics, best practices, and common pitfalls to watch out for as you begin writing your plugin.\r\n\r\n#### How to publish plugins?\r\n\r\nAlso, check our guide on [How to publish a plugin in jQuery Plugin Registry](https://github.com/money-format/boilerplate/wiki/How-to-publish-a-plugin-in-jQuery-Plugin-Registry\r\n)!\r\n\r\n**Note:** The jQuery Plugin Registry is in read-only mode. New plugin releases will not be processed.\r\njQuery recommends moving to [npm](https://www.npmjs.com/), using [\"jquery-plugin\"](https://www.npmjs.com/browse/keyword/jquery-plugin) as the keyword in your package.json. See [how to publish into npm registry](https://gist.github.com/coolaj86/1318304).\r\n\r\n## Team\r\n\r\nmoney.format was made with love by these guys and a bunch of awesome [contributors](https://github.com/money-format/boilerplate/graphs/contributors).\r\n\r\n[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) | [![Addy Osmani](http://gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=70)](http://addyosmani.com) | [![Helder Santana](http://gravatar.com/avatar/63fb620ee7d14fc91030d4349d189b3e?s=70)](http://heldr.com)\r\n--- | --- | --- | --- | --- | --- | ---\r\n[Zeno Rocha](http://zenorocha.com) | [Addy Osmani](http://addyosmani.com) | [Helder Santana](http://heldr.com)\r\n\r\n## Contributing\r\n\r\nCheck [CONTRIBUTING.md](https://github.com/money-format/boilerplate/blob/master/CONTRIBUTING.md) for more information.\r\n\r\n## History\r\n\r\nCheck [Releases](https://github.com/money-format/money-format/releases) for detailed changelog.\r\n\r\n## License\r\n\r\n[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/money-format/money-format.git"
+  },
+  "scripts": {
+    "jscs": "jscs src",
+    "test": "npm run jscs && grunt travis --verbose",
+    "start": "start http-server ."
+  },
+  "version": "4.1.0"
+}
