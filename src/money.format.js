@@ -70,7 +70,7 @@
                 $elem[jqCommand](negative + enteros + decimales);
             } else {
                 enteros = enteros.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
-                $elem[jqCommand](negative + dollar + enteros + decimales);
+                $elem[jqCommand](negative + dollar + " " + enteros + decimales);
             }
         },
         unformat: function() {
