@@ -2,27 +2,32 @@
 <html>
 
 <head>
-  <title>money.format</title>
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="../src/money.format.js"></script>
+    <title>money.format</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../src/money.format.js"></script>
 </head>
 
 <body>
-  <input type="number" class="element" step="any" />
-  <input type="number" class="element" step="any" />
-  <input type="number" class="element" step="any" />
-  <input type="text" class="element" step="any" />
-  <input type="number" class="element" step="any" />
-  <input type="number" class="element" step="any" />
-  <input type="text" class="element" step="any" />
-  <script>
-    $(function() {
-      $(".element").moneyFormat({
-        dollar: false
-      });
-    });
-
-  </script>
+    <input type="number" class="element" step="any" />
+    <input type="number" class="element" step="any" />
+    <input type="number" class="element" step="any" />
+    <input type="text" class="element" step="any" />
+    <input type="number" class="element" step="any" />
+    <input type="number" class="element" step="any" />
+    <input type="text" class="element" step="any" />
+    <span class="element">100</span>
+    <span class="element">1000</span>
+    <span class="element">10000</span>
+    <span class="element">100000</span>
+    <span class="element">1000000</span>
+    <script>
+        $(function() {
+            $("span").moneyFormat();
+            $(".element").moneyFormat({
+                dollar: false
+            });
+        });
+    </script>
 </body>
 
 </html>
