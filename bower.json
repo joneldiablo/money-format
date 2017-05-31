@@ -1,25 +1,32 @@
 {
-  "name": "money-format",
-  "license": "MIT",
-  "authors": [
-    "Zeno Rocha <hi@zenorocha.com>"
-  ],
-  "description": "A jump-start for jQuery plugins development.",
-  "homepage": "http://jqueryboilerplate.com",
-  "keywords": [
-    "jquery",
-    "plugin",
-    "boilerplate",
-    "jquery-plugin",
-    "money-format"
-  ],
-  "main": "src/money.format.js",
-  "dependencies": {
-    "jquery": "2.2.4"
-  },
-  "ignore": [
-    "npm-debug.log",
-    "bower_components",
-    "node_modules"
-  ]
+    "name": "money-format",
+    "license": "MIT",
+    "authors": [
+        "Jonathan Diego Rodriguez <jon_eldiablo@hotmail.com>"
+    ],
+    "description": "Plugin for change number to text with money format.",
+    "homepage": "https://github.com/joneldiablo/money-format.git",
+    "keywords": [
+        "jquery",
+        "plugin",
+        "boilerplate",
+        "jquery-plugin",
+        "money-format"
+    ],
+    "main": [
+        "dist/money.format.min.js",
+        "dist/money.format.js"
+    ],
+    "dependencies": {
+        "jquery": "2.2.4"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "package.json",
+        "src",
+        "npm-debug.log"
+    ]
 }
