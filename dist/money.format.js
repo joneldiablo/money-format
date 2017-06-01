@@ -63,6 +63,8 @@
             var jqCommand = "text";
             if ($elem.is("input") || $elem.is("textarea")) {
                 jqCommand = "val";
+            } else {
+                $elem.css("white-space", "nowrap");
             }
             var value = val ? val : parseFloat($elem[jqCommand]().replace(/[^\d.-]/g, ''));
             var negative = value < 0 ? "-" : "";
